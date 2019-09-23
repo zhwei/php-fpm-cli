@@ -1,0 +1,13 @@
+{
+    "name": "zhwei/php-fpm-cli",
+    "authors": [
+        {
+            "name": "zhwei",
+            "email": "zhwei.yes@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "hollodotme/fast-cgi-client": "3.0.0-beta"
+    }
+}
