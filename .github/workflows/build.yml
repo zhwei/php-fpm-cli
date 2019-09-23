@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Composer Action
+      uses: MilesChou/composer-action@v0.0.1
+      run: composer install
