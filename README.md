@@ -13,9 +13,10 @@ echo '<?php echo "hello world"; ?>' > test.php
 ```
 
 3. Run
+
 ```bash
 php php-fpm-cli.phar 127.0.0.1:9090 test.php
-// or
+# or
 php php-fpm-cli.phar /var/run/php/php7.3-fpm.sock test.php
 ```
 
