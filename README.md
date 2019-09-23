@@ -20,7 +20,7 @@ php php-fpm-cli.phar 127.0.0.1:9090 test.php
 php php-fpm-cli.phar /var/run/php/php7.3-fpm.sock test.php
 ```
 
-Result:
+4. Output:
 
 ```
 *** socket ***
