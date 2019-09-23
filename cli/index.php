@@ -42,6 +42,18 @@ if (strpos($socketArg, '/') === 0) {
 }
 
 $client = new Client();
-$request = new PostRequest(realpath($scriptArg), '');
+$script = realpath($scriptArg);
+$request = new PostRequest($script, '');
 $response = $client->sendRequest($connection, $request);
+
+echo "*** socket ***\n";
+echo basename(str_replace('\\', '/', get_class($connection))) . " {$socketArg}\n";
+echo "*** script ***\n";
+echo "{$script}\n";
+echo "\n\n";
+
+echo "*** headers ***\n";
+var_dump($response->getHeaders());
+echo "\n";
+echo "*** body ***\n";
 echo $response->getBody();
